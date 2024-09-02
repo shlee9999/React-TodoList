@@ -10,3 +10,13 @@
   margin-top: 20px;
   max-height: 500px;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.todo-con::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.todo-con {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

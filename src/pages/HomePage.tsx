@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TodoContainer from '../components/TodoContainer/TodoContainer';
 import './style.css';
 import { Todo, TodoController } from '../types';
@@ -48,6 +48,9 @@ export default function HomePage() {
   const onKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') onClickSubmit();
   };
+  useEffect(() => {
+    if (inputRef.current) inputRef.current.focus();
+  }, []);
   return (
     <main className='main-page'>
       <div className='wrap'>
