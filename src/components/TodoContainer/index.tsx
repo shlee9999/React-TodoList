@@ -1,6 +1,7 @@
 import './style.css';
 import { Todo, TodoController } from '../../types';
-import TodoItem from '../TodoItem/TodoItem';
+import TodoItem from '../TodoItem';
+import NoTodo from './NoTodo';
 
 interface TodoContainerProps {
   todoList?: Todo[];
@@ -10,7 +11,7 @@ export default function TodoContainer({
   todoList,
   todoController,
 }: TodoContainerProps) {
-  if (todoList?.length === 0) return null;
+  if (todoList?.length === 0) return <NoTodo />;
   return (
     <ul className={`todo-con `}>
       {todoList?.map((todo, index) => (

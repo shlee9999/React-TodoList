@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import TodoContainer from '../components/TodoContainer/TodoContainer';
+import TodoContainer from '../components/TodoContainer';
 import './style.css';
 import { Todo, TodoController } from '../types';
 import { LocalStorage } from '../lib/localStorage';
 import { generateId } from '../utils/generateId';
+
 export default function HomePage() {
   const [todoList, setTodoList] = useState<Todo[]>(LocalStorage.getTodo());
   const inputRef = useRef<HTMLInputElement>(null);

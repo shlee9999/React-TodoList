@@ -16,6 +16,7 @@
   max-width: var(--max-w);
   min-width: var(--min-w);
   width: 80%;
+  position: relative;
 }
 .submit-container {
   margin-top: 20px;

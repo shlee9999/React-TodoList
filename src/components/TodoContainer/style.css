@@ -20,3 +20,13 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.no-todo {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  color: rgba(145, 32, 32, 0.788);
+  font-weight: 600;
+}
