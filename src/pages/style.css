@@ -1,7 +1,7 @@
 .main-page {
   background-color: blanchedalmond;
   height: 100vh;
-  position: relative;
+  padding: 50px 0;
 }
 .logo {
   font-size: 5rem;
@@ -10,16 +10,12 @@
 }
 
 .main-page > .wrap {
+  margin: auto;
+  height: 100%;
   max-width: var(--max-w);
   min-width: var(--min-w);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 80%;
-  position: relative;
 }
-
 .submit-container {
   margin-top: 20px;
   display: flex;
