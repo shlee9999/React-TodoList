@@ -50,8 +50,8 @@ export default function HomePage() {
   };
   return (
     <main className='main-page'>
-      <h1 className='logo'>TodoList</h1>
       <div className='wrap'>
+        <h1 className='logo'>TodoList</h1>
         <div className='submit-container'>
           <input
             type='text'

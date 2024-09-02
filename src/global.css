@@ -1,3 +1,8 @@
+:root {
+  --min-w: 350px;
+  --max-w: 600px;
+}
+
 * {
   box-sizing: border-box;
 }
