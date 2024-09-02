@@ -1,0 +1,80 @@
+.main-page {
+  background-color: blanchedalmond;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  font-size: 5rem;
+  margin-top: 50px;
+  color: #555;
+}
+
+.main-page > .wrap {
+  margin-top: 20px;
+  position: relative;
+}
+
+.submit-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.todo-input {
+  padding-left: 10px;
+  width: 540px;
+  height: 46px;
+  font-size: 15pt;
+  border: none;
+  display: flex;
+  align-items: center;
+  display: block;
+}
+.todo-input:focus {
+  outline: none;
+}
+
+.submit-button {
+  text-decoration: none;
+  margin-right: 2px;
+  width: 60px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.submit-button:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.submit-button:active {
+  filter: brightness(0.8);
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+.delete_all-btn {
+  position: absolute;
+  width: 595px;
+  font-size: 8pt;
+  margin-top: 10px;
+}
+
+.delete_all-btn:hover {
+  cursor: default;
+}
+
+:link {
+  color: black;
+}
