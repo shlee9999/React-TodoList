@@ -10,3 +10,15 @@
   font-weight: 400;
   font-style: normal;
 }
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0;
+}

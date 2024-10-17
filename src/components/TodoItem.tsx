@@ -1,6 +1,6 @@
 import { MAX_INPUT_LENGTH } from '@constants/constants';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faSquare, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
+import { faSquare, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '@styles/TodoItem.module.css';
 import { useEffect, useRef, useState } from 'react';
@@ -25,8 +25,6 @@ export default function TodoItem({ todo, todoController }: TodoItemProps) {
     }
   };
 
-  console.log(done);
-
   useEffect(() => {
     if (isEditing && inputRef.current) {
       inputRef.current.value = text;
@@ -41,8 +39,7 @@ export default function TodoItem({ todo, todoController }: TodoItemProps) {
         &nbsp; */}
         <FontAwesomeIcon
           icon={(done ? faSquareCheck : faSquare) as IconProp}
-          color='#9b9b9b'
-          border={true}
+          color='gray'
           onClick={() => todoController.toggleDone(id)}
           cursor='pointer'
         />

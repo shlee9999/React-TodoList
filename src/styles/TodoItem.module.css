@@ -3,10 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: whitesmoke;
   border-bottom: 1px solid #ddd;
   border-radius: 10px;
   height: 46px;
   padding-left: 12px;
+}
+
+.todoItem:hover {
+  background-color: lightgray;
 }
 
 .deleteButton {
@@ -20,16 +25,12 @@
 }
 .deleteButton:hover {
   filter: brightness(0.9);
-  cursor: pointer;
 }
 
 .deleteButton:active {
   filter: brightness(0.8);
 }
 
-.deleteButton:focus {
-  outline: none;
-}
 .editButton {
   margin-right: 2px;
   width: 60px;
@@ -41,15 +42,10 @@
 }
 .editButton:hover {
   filter: brightness(0.9);
-  cursor: pointer;
 }
 
 .editButton:active {
   filter: brightness(0.8);
-}
-
-.editButton:focus {
-  outline: none;
 }
 
 .text,
@@ -58,20 +54,14 @@
   flex: 1;
   margin-left: 5px;
 }
+
 .text {
   text-align: left;
   position: relative;
-  cursor: pointer;
-}
-.done {
-  text-decoration: line-through;
 }
 
-.editor {
-  padding: 0;
-  border: none;
-  outline: none;
-  font-size: 1rem;
+.done {
+  text-decoration: line-through;
 }
 
 .leftBox {
