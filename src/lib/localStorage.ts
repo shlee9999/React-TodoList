@@ -1,5 +1,3 @@
-import { Todo } from '../types';
-
 export class LocalStorage {
   static key = 'todo';
 

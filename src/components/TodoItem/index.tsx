@@ -1,10 +1,9 @@
-import './style.css';
-import { Todo, TodoController } from '../../types';
-import { useEffect, useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { MAX_INPUT_LENGTH } from '@constants/constants';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { faSquare, faSquareCheck } from '@fortawesome/free-regular-svg-icons';
-import { MAX_INPUT_LENGTH } from '../../constants/constants';
+import { faSquare, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useRef, useState } from 'react';
+import './style.css';
 
 interface TodoItemProps {
   todo: Todo;

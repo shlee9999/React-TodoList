@@ -1,7 +1,7 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
-import { faList } from '@fortawesome/free-solid-svg-icons';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export default function NoTodo() {
   return (

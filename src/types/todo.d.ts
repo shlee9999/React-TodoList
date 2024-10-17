@@ -1,10 +1,10 @@
-export type Todo = {
+type Todo = {
   id: string;
   text: string;
   done: boolean;
 };
 
-export type TodoController = {
+type TodoController = {
   addTodo: (todo: Omit<Todo, 'id'>) => void;
   deleteTodo: (id: Todo['id']) => void;
   updateTodo: (id: Todo['id'], newTodo: Todo) => void;

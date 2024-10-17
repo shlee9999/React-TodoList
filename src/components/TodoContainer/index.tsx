@@ -1,7 +1,6 @@
-import './style.css';
-import { Todo, TodoController } from '../../types';
-import TodoItem from '../TodoItem';
+import TodoItem from '@components/TodoItem';
 import NoTodo from './NoTodo';
+import './style.css';
 
 interface TodoContainerProps {
   todoList?: Todo[];
