@@ -1,8 +1,9 @@
-.main-page {
+.mainPage {
   background-color: blanchedalmond;
   height: 100vh;
   padding: 50px 0;
 }
+
 .logo {
   font-family: sans-serif;
   font-size: 5rem;
@@ -10,7 +11,7 @@
   text-align: center;
 }
 
-.main-page > .wrap {
+.mainPage > .wrap {
   margin: auto;
   height: 100%;
   max-width: var(--max-w);
@@ -18,7 +19,7 @@
   width: 80%;
   position: relative;
 }
-.submit-container {
+.submitContainer {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@
   height: 46px;
 }
 
-.todo-input {
+.todoInput {
   position: absolute;
   border-radius: 10px;
   width: 100%;
@@ -41,12 +42,12 @@
   border: 2px solid transparent;
   transition: border-color 0.2s;
 }
-.todo-input:focus {
+.todoInput:focus {
   border-color: burlywood;
   outline: none;
 }
 
-.submit-button {
+.submitButton {
   position: absolute;
   text-decoration: none;
   width: 60px;
@@ -58,25 +59,25 @@
   right: 5px;
 }
 
-.submit-button:hover {
+.submitButton:hover {
   filter: brightness(0.9);
   cursor: pointer;
 }
-.submit-button:active {
+.submitButton:active {
   filter: brightness(0.8);
 }
 
-.submit-button:focus {
+.submitButton:focus {
   outline: none;
 }
 
-.delete_all-btn {
+.deleteAllButton {
   position: absolute;
   width: 595px;
   font-size: 8pt;
   margin-top: 10px;
 }
 
-.delete_all-btn:hover {
+.deleteAllButton:hover {
   cursor: default;
 }

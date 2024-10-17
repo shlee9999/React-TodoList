@@ -8,6 +8,7 @@
       "@pages/*": ["pages/*"],
       "@lib/*": ["lib/*"],
       "@utils/*": ["utils/*"],
+      "@styles/*": ["styles/*"],
       "@/*": ["*"]
     },
     "target": "ES2020",

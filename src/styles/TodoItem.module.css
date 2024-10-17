@@ -1,4 +1,4 @@
-.todo-item {
+.todoItem {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   padding-left: 12px;
 }
 
-.delete-button {
+.deleteButton {
   margin-right: 5px;
   width: 60px;
   height: 36px;
@@ -18,19 +18,19 @@
   color: white;
   border: none;
 }
-.delete-button:hover {
+.deleteButton:hover {
   filter: brightness(0.9);
   cursor: pointer;
 }
 
-.delete-button:active {
+.deleteButton:active {
   filter: brightness(0.8);
 }
 
-.delete-button:focus {
+.deleteButton:focus {
   outline: none;
 }
-.edit-button {
+.editButton {
   margin-right: 2px;
   width: 60px;
   height: 36px;
@@ -39,16 +39,16 @@
   color: white;
   border: none;
 }
-.edit-button:hover {
+.editButton:hover {
   filter: brightness(0.9);
   cursor: pointer;
 }
 
-.edit-button:active {
+.editButton:active {
   filter: brightness(0.8);
 }
 
-.edit-button:focus {
+.editButton:focus {
   outline: none;
 }
 
@@ -61,6 +61,10 @@
 .text {
   text-align: left;
   position: relative;
+  cursor: pointer;
+}
+.done {
+  text-decoration: line-through;
 }
 
 .editor {
@@ -70,18 +74,10 @@
   font-size: 1rem;
 }
 
-.left-box {
+.leftBox {
   display: flex;
   align-items: center;
   flex: 1;
-}
-
-.text_toggle {
-  text-decoration: line-through;
-}
-
-.text:hover {
-  cursor: pointer;
 }
 
 :visited {

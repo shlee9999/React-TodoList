@@ -1,8 +1,8 @@
 import TodoContainer from '@components/TodoContainer';
-import { LocalStorage } from '@lib/localStorage';
+import { LocalStorage } from '@utils/localStorage';
+import styles from '@styles/HomePage.module.css';
 import { generateId } from '@utils/generateId';
 import { useEffect, useRef, useState } from 'react';
-import './style.css';
 
 export default function HomePage() {
   const [todoList, setTodoList] = useState<Todo[]>(LocalStorage.getTodo());
@@ -52,19 +52,19 @@ export default function HomePage() {
     if (inputRef.current) inputRef.current.focus();
   }, []);
   return (
-    <main className='main-page'>
-      <div className='wrap'>
-        <h1 className='logo'>TodoList</h1>
-        <div className='submit-container'>
+    <main className={styles.mainPage}>
+      <div className={styles.wrap}>
+        <h1 className={styles.logo}>TodoList</h1>
+        <div className={styles.submitContainer}>
           <input
             type='text'
-            className='todo-input'
+            className={styles.todoInput}
             ref={inputRef}
             onKeyUp={onKeyUp}
             maxLength={25}
           />
           {/* <button className='delete_all-btn'>delete all</button> */}
-          <button className='submit-button' onClick={onClickSubmit}>
+          <button className={styles.submitButton} onClick={onClickSubmit}>
             submit
           </button>
         </div>
