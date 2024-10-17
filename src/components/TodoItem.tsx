@@ -55,7 +55,7 @@ export default function TodoItem({ todo, todoController }: TodoItemProps) {
           <p className={`${styles.text} ${done ? styles.done : ''}`}>{text}</p>
         )}
       </div>
-      <div className={styles.rightBox}>
+      <div>
         <button
           className={styles.editButton}
           onClick={() => setIsEditing(true)}

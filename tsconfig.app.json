@@ -11,6 +11,8 @@
       "@styles/*": ["styles/*"],
       "@/*": ["*"]
     },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
